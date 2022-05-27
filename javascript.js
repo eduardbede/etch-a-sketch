@@ -1,5 +1,6 @@
 
 
+
 function makeRows(rows, cols) {
     container.style.setProperty('--grid-rows', rows);
     container.style.setProperty('--grid-cols', cols);
@@ -12,10 +13,10 @@ function makeRows(rows, cols) {
     };
   };
   
-  
+  let colorPicker = document.getElementById('colorPicker');
   
   function myFunction(e) {
-      e.target.style.backgroundColor = 'red';
+      e.target.style.backgroundColor = colorPicker.value;
      // e.target.style.transition = "0.3s";
   }
   
@@ -32,19 +33,31 @@ function makeRows(rows, cols) {
   
   let slider = document.getElementById("myRange");
   let output = document.getElementById("demo");
-  output.innerHTML = slider.value + " x " + slider.value; // Display the default slider value
+  output.innerHTML = slider.value + " x " + slider.value;
   
-  // Update the current slider value (each time you drag the slider handle)
+  
   slider.oninput = function() {
     output.innerHTML = this.value + " x " + this.value;
   };
   
-  makeRows(slider.value, slider.value)
+  makeRows(slider.value, slider.value);
   
   function resetOnChange(){
     alb();
     makeRows(slider.value, slider.value);
-  }
+  };
   
   
+  function colorChange(){
+    colorPicker.value;
+    console.log(colorPicker.value);
+  };
+
+
+
+
+
+const date = new Date();
+let year = date.getFullYear();
+const an = document.getElementById("an").textContent = year + " @eduardbede ";
   

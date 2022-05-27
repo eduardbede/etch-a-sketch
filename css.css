@@ -66,6 +66,7 @@ header{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffee66;
 }
+
 .myButton:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
 	background-color:#ffab23;
@@ -80,4 +81,27 @@ header{
   font-size: large;
 }
 
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
 
+footer{
+  margin-top: 6em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 21px;
+  letter-spacing: 0.6px;
+  word-spacing: 0.8px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+#an{
+  margin-right: 10px;
+}
